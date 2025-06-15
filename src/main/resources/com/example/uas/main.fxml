@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.uas.MainController"
+            prefWidth="600" prefHeight="400">
+    <children>
+        <HBox spacing="0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <ImageView fitWidth="300" fitHeight="400">
+                <image>
+                    <Image url="@/com/example/uas/assets/logo.jpg"/>
+                </image>
+            </ImageView>
+
+            <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #A5733D;" prefWidth="300">
+                <Label text="DompetKu." style="-fx-font-size: 28px; -fx-text-fill: gold;"/>
+                <HBox spacing="20.0">
+                    <Button text="Masuk" style="-fx-background-color: black; -fx-text-fill: white;"/>
+                    <Button text="Daftar" style="-fx-background-color: #444444; -fx-text-fill: yellow;"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>
