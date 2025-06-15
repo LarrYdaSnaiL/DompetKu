@@ -9,9 +9,10 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/uas/splash.fxml"));
-        Scene scene = new Scene(loader.load(), 400, 600);
-        stage.setScene(scene);
+        Scene scene = new Scene(loader.load(), 1024, 640);
         stage.setTitle("DompetKU");
+        stage.setScene(scene);
+        stage.setResizable(true);
         stage.show();
     }
 
