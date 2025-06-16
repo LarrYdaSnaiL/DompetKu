@@ -8,37 +8,60 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="640" prefWidth="1024"
-            xmlns:fx="http://javafx.com/fxml/1"
-            xmlns="http://javafx.com/javafx/23.0.1"
-            fx:controller="com.example.uas.MainController">
+<AnchorPane
+        prefHeight="640"
+        prefWidth="1024"
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/23.0.1"
+        fx:controller="com.example.uas.MainController">
+
     <children>
-        <HBox spacing="0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <HBox
+                spacing="0"
+                AnchorPane.topAnchor="0.0"
+                AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0">
 
             <!-- Gambar kiri -->
-            <ImageView fitHeight="640" fitWidth="512">
+            <ImageView
+                    fitHeight="640"
+                    fitWidth="512">
                 <image>
                     <Image url="@assets/mainLogo.png" />
                 </image>
             </ImageView>
 
             <!-- Area kanan -->
-            <VBox alignment="CENTER" prefWidth="512" spacing="30"
-                  style="-fx-background-color: #A5733D;">
+            <VBox
+                    alignment="CENTER"
+                    prefWidth="512"
+                    spacing="30"
+                    style="-fx-background-color: #A5733D;">
+
                 <!-- Judul -->
-                <Label text="DompetKu."
-                       style="-fx-font-size: 54px; -fx-text-fill: gold; -fx-font-family: 'Merriweather';"/>
+                <Label
+                        text="DompetKu."
+                        style="-fx-font-size: 54px; -fx-text-fill: gold; -fx-font-family: 'Merriweather';"/>
 
                 <!-- Tombol-tombol -->
-                <VBox alignment="CENTER" spacing="15">
-                    <Button fx:id="btnMasuk"
-                            text="Masuk" prefWidth="200" prefHeight="50"
+                <VBox
+                        alignment="CENTER"
+                        spacing="15">
+
+                    <Button
+                            fx:id="btnMasuk"
+                            text="Masuk"
+                            prefWidth="200"
+                            prefHeight="50"
                             onAction="#handleMasuk"
                             style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-family: 'Merriweather';"/>
 
-                    <Button fx:id="btnDaftar"
-                            text="Daftar" prefWidth="200" prefHeight="50"
+                    <Button
+                            fx:id="btnDaftar"
+                            text="Daftar"
+                            prefWidth="200"
+                            prefHeight="50"
                             onAction="#handleDaftar"
                             style="-fx-background-color: #444444; -fx-text-fill: yellow; -fx-font-size: 16px; -fx-font-family: 'Merriweather';"/>
                 </VBox>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane
+        xmlns="http://javafx.com/javafx/23.0.1"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.example.uas.PengaturanController"
+        prefWidth="800" prefHeight="500">
+
+    <!-- Sidebar -->
+    <left>
+        <VBox
+                spacing="20"
+                alignment="TOP_CENTER"
+                prefWidth="200"
+                style="-fx-background-color: #d3d3d3;">
+
+            <padding>
+                <Insets top="30" bottom="20"/>
+            </padding>
+
+            <ImageView
+                    fitHeight="80"
+                    fitWidth="80"
+                    style="-fx-background-color: #996600; -fx-background-radius: 50;">
+                <clip>
+                    <Circle centerX="40" centerY="40" radius="40"/>
+                </clip>
+            </ImageView>
+
+            <Label
+                    text="Rafii"
+                    style="-fx-font-size: 18px; -fx-text-fill: #996600;"/>
+            <Label
+                    text="rafikon123@gmail.com"
+                    style="-fx-text-fill: #333333;"/>
+
+            <VBox
+                    spacing="10"
+                    alignment="CENTER">
+                <Button
+                        text="Beranda"
+                        prefWidth="140"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+                <Button
+                        text="Transaksi"
+                        prefWidth="140"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+                <Button
+                        text="Pengaturan"
+                        prefWidth="140"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+            </VBox>
+
+            <Button
+                    text="Keluar"
+                    prefWidth="140"
+                    style="-fx-background-color: #cc8800; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <!-- Form Pengaturan -->
+    <center>
+        <VBox
+                spacing="20"
+                alignment="TOP_CENTER"
+                style="-fx-background-color: #333333;">
+
+            <padding>
+                <Insets top="30" left="50" right="50" bottom="30"/>
+            </padding>
+
+            <ImageView
+                    fx:id="profileImageView"
+                    fitHeight="80"
+                    fitWidth="80"
+                    style="-fx-background-color: #996600; -fx-background-radius: 50;">
+                <clip>
+                    <Circle centerX="40" centerY="40" radius="40"/>
+                </clip>
+            </ImageView>
+
+            <Button
+                    text="Upload Foto"
+                    fx:id="btnUploadFoto"
+                    style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+
+            <VBox
+                    spacing="10"
+                    maxWidth="400">
+                <TextField
+                        fx:id="txtNama"
+                        promptText="Nama Lengkap"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+                <TextField
+                        fx:id="txtEmail"
+                        promptText="Email"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+                <PasswordField
+                        fx:id="txtPassword"
+                        promptText="Password"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+            </VBox>
+
+            <HBox
+                    alignment="BOTTOM_RIGHT"
+                    spacing="10"
+                    prefWidth="400">
+                <Region
+                        fx:id="region"
+                        HBox.hgrow="ALWAYS"/>
+                <Button
+                        text="Simpan"
+                        fx:id="btnSimpan"
+                        style="-fx-background-color: #996600; -fx-text-fill: white;"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>
