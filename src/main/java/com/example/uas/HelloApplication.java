@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/uas/transaksi.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/uas/splash.fxml"));
         Scene scene = new Scene(loader.load(), 1024, 640);
         stage.setTitle("DompetKU");
         stage.setScene(scene);
