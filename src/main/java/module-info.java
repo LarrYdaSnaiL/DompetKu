@@ -1,8 +1,13 @@
-module com.example.uas {
+module com.cdm.uas_pbo {
     requires javafx.controls;
     requires javafx.fxml;
 
+    requires java.sql;
 
-    opens com.example.uas to javafx.fxml;
-    exports com.example.uas;
+    opens com.cdm.uas_pbo.controller to javafx.fxml;
+
+    opens com.cdm.uas_pbo to javafx.graphics;
+
+    opens com.cdm.uas_pbo.model to javafx.base;
+    opens com.cdm.uas_pbo.Service to javafx.fxml;
 }

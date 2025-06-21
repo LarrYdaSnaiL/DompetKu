@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.cdm.uas_pbo.controller.DashboardTabController">
+    <padding>
+        <Insets top="10"/>
+    </padding>
+    <HBox spacing="20" alignment="CENTER" style="-fx-padding: 10;">
+        <VBox style="-fx-border-color: lightgray; -fx-padding: 10; -fx-background-color: #f9f9f9; -fx-background-radius: 5;"
+              alignment="CENTER" prefWidth="250">
+            <Label text="Total Income"/>
+            <Label fx:id="totalIncomeLabel" style="-fx-font-size: 20px; -fx-text-fill: green; -fx-font-weight: bold;"/>
+        </VBox>
+        <VBox style="-fx-border-color: lightgray; -fx-padding: 10; -fx-background-color: #f9f9f9; -fx-background-radius: 5;"
+              alignment="CENTER" prefWidth="250">
+            <Label text="Total Expense"/>
+            <Label fx:id="totalExpenseLabel" style="-fx-font-size: 20px; -fx-text-fill: red; -fx-font-weight: bold;"/>
+        </VBox>
+        <VBox style="-fx-border-color: lightgray; -fx-padding: 10; -fx-background-color: #f9f9f9; -fx-background-radius: 5;"
+              alignment="CENTER" prefWidth="250">
+            <Label text="Current Balance"/>
+            <Label fx:id="balanceLabel" style="-fx-font-size: 20px; -fx-text-fill: blue; -fx-font-weight: bold;"/>
+        </VBox>
+    </HBox>
+    <VBox alignment="CENTER" style="-fx-padding: 10;" VBox.vgrow="ALWAYS">
+        <PieChart fx:id="expensePieChart" legendVisible="true"/>
+    </VBox>
+</VBox>
