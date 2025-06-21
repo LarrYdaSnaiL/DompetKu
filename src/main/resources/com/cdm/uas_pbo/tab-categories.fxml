@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.cdm.uas_pbo.controller.CategoriesTabController">
+    <Label text="Manage your expense categories:" style="-fx-font-weight: bold;"/>
+    <ListView fx:id="categoryListView" VBox.vgrow="ALWAYS"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button text="Add Category" onAction="#handleAddCategory"/>
+        <Button text="Edit Selected" onAction="#handleEditCategory"/>
+        <Button text="Delete Selected" onAction="#handleDeleteCategory"/>
+    </HBox>
+</VBox>
