@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.cdm.uas_pbo.controller.ReportsTabController">
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Select Month:"/>
+        <ComboBox fx:id="reportMonthCombo" promptText="Choose a month"/>
+        <Button text="Generate Report" onAction="#handleGenerateReport"/>
+    </HBox>
+    <TextArea fx:id="reportTextArea" editable="false" VBox.vgrow="ALWAYS" wrapText="true"
+              style="-fx-font-family: 'monospace';"/>
+</VBox>
