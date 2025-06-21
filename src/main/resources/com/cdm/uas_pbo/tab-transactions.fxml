@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.cdm.uas_pbo.controller.TransactionsTabController">
+    <TableView fx:id="transactionTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="dateCol" text="Date" prefWidth="100"/>
+            <TableColumn fx:id="descCol" text="Description" prefWidth="400"/>
+            <TableColumn fx:id="catCol" text="Category" prefWidth="150"/>
+            <TableColumn fx:id="typeCol" text="Type" prefWidth="80"/>
+            <TableColumn fx:id="amountCol" text="Amount (Rp)" prefWidth="150"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </TableView>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button text="Add Transaction" onAction="#handleAddTransaction"/>
+        <Button text="Edit Selected" onAction="#handleEditTransaction"/>
+        <Button text="Delete Selected" onAction="#handleDeleteTransaction"/>
+    </HBox>
+</VBox>
