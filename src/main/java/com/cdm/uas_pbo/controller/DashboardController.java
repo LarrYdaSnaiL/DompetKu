@@ -1,12 +1,14 @@
 package com.cdm.uas_pbo.controller;
 
 import com.cdm.uas_pbo.Main;
+import com.cdm.uas_pbo.model.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -53,7 +55,7 @@ public class DashboardController {
             Stage stage = (Stage) welcomeLabel.getScene().getWindow();
             stage.setScene(scene);
             stage.centerOnScreen();
-            stage.setTitle("Finance Manager - Login");
+            stage.setTitle("DompetKu. - Login");
         } catch (IOException e) {
             e.printStackTrace();
         }

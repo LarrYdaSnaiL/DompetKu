@@ -1,5 +1,6 @@
 package com.cdm.uas_pbo.controller;
 
+import com.cdm.uas_pbo.model.*;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
